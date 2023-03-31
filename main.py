@@ -176,9 +176,9 @@ df2.isnull().sum().sort_values(ascending=False)
 Imputer = SimpleImputer(missing_values='NaN', strategy='mean')
 
 #from sklearn.impute import SimpleImputer
-imp = Imputer(missing_values='NaN', strategy='median', axis=0)
-imp.fit(df2)
-df2 = pd.DataFrame(data=imp.transform(df2) , columns=df2.columns)
+#imp = Imputer(missing_values='NaN', strategy='median', axis=0)
+#imp.fit(df2)
+#df2 = pd.DataFrame(data=imp.transform(df2) , columns=df2.columns)
 
 """Didnt use Imputer to replace Nan with median values """
 
